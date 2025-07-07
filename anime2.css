@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-image: url('file:///I:/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8/l-D94ZqSfrI.jpg');
+    background-size: cover;    /* Вписать изображение без обрезки */
+    background-repeat: no-repeat; /* Запретить повторение */
+    background-position: center; /* Центрировать */
+    width: 100%;                /* Ширина по родителю */
+    height: 400px;              /* Фиксированная высота (или адаптивная) */
+    background-color: #f0f0f0;  /* Фон для пустых областей (если пропорции не совпадают) */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: rgb(0, 255, 0);
+    border-radius: 3px;
+
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.anime-card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: var(--card-bg);
+    
+}
+
+.anime-card img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.anime-title {
+  white-space: nowrap;     /* Запрещаем перенос строк */
+  overflow: hidden;        /* Скрываем текст, выходящий за границы */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+  max-width: 100%;         /* Ограничиваем ширину */
+  margin: 0;               /* Убираем отступы у h3 */
+  /* display: -webkit-box; 
+  -webkit-line-clamp: 2;     Количество строк
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: normal;      Разрешаем перенос */
+}
+
+.filters {
+    text-align: center;
+    margin: 20px;
+}
+
+select {
+    padding: 8px;
+    margin: 0 10px;
+}
+
+.team-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .team-scroll {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    /* Скрываем стандартный скроллбар */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  
+  .team-scroll::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .team-card {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .team-card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .scroll-button {
+    background: #1a1a2e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  
+  .scroll-button:hover {
+    background: #2a2a4a;
+  }
+
+  /* .button_main {
+    
+  } */
+
+  :root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #f0f0f0;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a2e;
+  --text-color: #f0f0f0;
+  --card-bg: #2a2a4a;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.team-card {
+  background: var(--card-bg);
+}
+
+.theme-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--card-bg);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 100;
+}
