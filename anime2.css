@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url('Insane Voice/fon.jpg');
+    background-image: url('https://github.com/M0ZAS/insane-voice/blob/main/Insane%20Voice/fon.jpg?raw=true');
     border-radius: 100px 100px 100px 100px;
     background-size: cover;    /* Вписать изображение без обрезки */
     background-repeat: no-repeat; /* Запретить повторение */
