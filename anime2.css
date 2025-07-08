@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url('fon.jpg');
+    background-image: url('Insane Voice/fon.jpg');
     border-radius: 100px 100px 100px 100px;
     background-size: cover;    /* Вписать изображение без обрезки */
     background-repeat: no-repeat; /* Запретить повторение */
