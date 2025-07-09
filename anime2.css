@@ -11,7 +11,7 @@ header {
     border-radius: 100px 100px 100px 100px;
     background-size: cover;    /* Вписать изображение без обрезки */
     background-repeat: no-repeat; /* Запретить повторение */
-    background-position: center; /* Центрировать */
+    background-position: bottom; /* Центрировать */
     width: 100%;                /* Ширина по родителю */
     height: 400px;              /* Фиксированная высота (или адаптивная) */
     background-color: #f0f0f0;  /* Фон для пустых областей (если пропорции не совпадают) */
@@ -84,6 +84,7 @@ select {
   .scroll-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-top: 20px;
   }
@@ -93,15 +94,7 @@ select {
     /* justify-content: space-between; */
     gap: 15px;
     overflow-x: auto;
-    scroll-behavior: smooth;
     padding: 10px 0;
-    /* Скрываем стандартный скроллбар */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
-  }
-  
-  .team-scroll::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
   }
   
   .team-card {
